@@ -1,0 +1,35 @@
+<h2 class="message">ENROL IN HOGWARTS</h2>
+
+<div class="formcontainer">
+  <form action="/new" method="POST">
+
+    <div class="datafield">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="first_name" id="firstName">
+    </div>
+
+    <div class="datafield">
+      <label for="lastName">Surname:</label>
+      <input type="text" name="last_name" id="lastName">
+    </div>
+
+    <div class="datafield">
+      <label for="houseSelect">Choose House:</label>
+      <select name="house_id" id="houseSelect">
+        <% @houses.each do |house| %>
+        <option value="<%= house.id %>"> <%= house.name %> </option>
+        <% end %>
+      </select>
+    </div>
+
+    <div class="datafield">
+      <label for="age">Age:</label>
+      <input type="number" name="age" id="age">
+    </div>
+
+    <div class="formcontainer">
+      <input type="submit" value="Enrol">
+    </div>
+
+</form>
+</div>

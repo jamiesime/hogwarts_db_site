@@ -1,0 +1,10 @@
+<h2 class="message">ALL HOUSES OF HOGWARTS</h2>
+
+<div class="houses">
+<% @list.each do |house| %>
+<div class='house_entry'>
+  <p> <%= house.name() %></p>
+  <img class="houselogo" src="<%= house.logo %>" alt="nothing">
+</div>
+<% end %>
+</div>

@@ -1,0 +1,147 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #282828;
+}
+
+
+@media (min-width: 720px) {
+  .container {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
+
+@media (min-width: 720px) {
+  nav {
+    flex: 1;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-flow: column;
+    margin: 10px 20px;
+    justify-content: flex-start;
+    width: 20%;
+  }
+  .logo {
+    padding-left: 30px;
+  }
+}
+
+@media (max-width: 719px) {
+  nav {
+    text-align: center;
+  }
+  .logo {
+    padding-left: 0px;
+  }
+}
+
+.logo {
+  width: 96px;
+}
+
+.content-container {
+  flex: 4;
+}
+
+
+.cell {
+  margin: 0px;
+  padding: 10px;
+  background-image: url(paper1.png);
+  background-repeat: repeat;
+  border: 1px solid #282828;
+}
+
+.cell a:hover {
+  color: #bada55;
+}
+
+.cell a {
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+.searchbox {
+  margin: 10px 10x;
+  padding: 10px;
+  background-image: url(paper1.png);
+  background-repeat: repeat;
+  border: 1px solid #282828;
+}
+
+
+.message {
+  text-align: center;
+  padding-top: 50px;
+  color: #dddddd;
+}
+
+.students {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.stud_entry {
+  width: 180px;
+  height: 120px;
+  padding-left: 20px;
+  margin: 20px;
+  background-image: url(paper1.png);
+  background-repeat:no-repeat;
+}
+
+.houses {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.house_entry {
+  margin: 30px;
+  text-align: center;
+  padding: 10px;
+}
+
+.houselogo {
+  width: 100px;
+}
+
+.formcontainer {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+}
+
+.datafield {
+  font-size: 20px;
+}
+
+.formcontainer label {
+  width: 200px;
+  display: inline-block;
+}
+
+.formcontainer select {
+  font-size: 20px;
+  width: 215px;
+}
+
+.formcontainer input {
+  font-size:  20px;
+}
+
+.formcontainer input[type="submit" i] {
+  font-size: 16px;
+  width: 100px;
+}

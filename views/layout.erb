@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hogwarts Student Database</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+      <nav>
+
+        <div class="cell">
+          <img class="logo" src="hoglogo.png" alt="Hogwarts">
+        </div>
+
+        <div class="cell">
+          <a href="/">Home</a>
+        </div>
+        <div class="cell">
+          <a href="/list">All Students</a>
+        </div>
+        <div class="cell">
+          <a href="/list_house">All Houses</a>
+        </div>
+        <div class="cell">
+          <a href="/enrol">Enrol</a>
+        </div>
+
+      <div class="searchbox">
+            <form action="/find_student" method="get">
+                <label for="find">Find Student(ID):</label>
+                <input type="number" name="id" id="id">
+                <input type="submit" value="Search">
+            </form>
+      </div>
+
+      <div class="searchbox">
+            <form action="/find_house" method="get">
+                <label for="find">Find House(ID):</label>
+                <input type="number" name="id" id="id">
+                <input type="submit" value="Search">
+            </form>
+      </div>
+    </nav>
+
+    <div class="content-container">
+      <%= yield %>
+    </div>
+  </div>
+
+  </body>
+</html>
